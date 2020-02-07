@@ -1,0 +1,37 @@
+.customInput {
+  display: block;
+  border: 0;
+  color: var(--text-dark);
+  font-size: 11px;
+  font-weight: 900;
+  height: 25px;
+  caret-color: rgba(0, 0, 0, 0);
+  width: 90px;
+  background-image: url('../../assets/images/calendar.png');
+  background-position: 0px 0px;
+  padding-left: 25px;
+  background-repeat: no-repeat;
+}
+
+.customInput:focus,
+.customInput:active {
+  border: none;
+  border-color: black;
+}
+
+@media screen and (min-width: 768px) {
+  .customInput {
+    width: 91px;
+    height: 25px;
+    padding-left: 8px;
+    text-align: right;
+    /* margin-right: 10px; */
+  }
+}
+
+@media screen and (min-width: 1280px) {
+  .customInput {
+    margin-left: 30px;
+    margin-right: 30px;
+  }
+}

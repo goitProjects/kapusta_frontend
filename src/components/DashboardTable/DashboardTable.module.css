@@ -1,0 +1,102 @@
+.table {
+  border-collapse: collapse;
+  width: 620px;
+  overflow: hidden;
+  border-radius: 20px 20px 0 0;
+  overflow-x: auto;
+  display: block;
+  white-space: nowrap;
+}
+
+.head .headerRow,
+.body .dataRow {
+  display: table;
+  width: 100%;
+  table-layout: fixed;
+}
+
+.head {
+  position: relative;
+  display: block;
+}
+
+.headerRow {
+  height: 39px;
+  background: #f4f6fb;
+  font-family: 'roboto';
+  font-size: 10px;
+  text-transform: uppercase;
+}
+
+.body {
+  display: block;
+  overflow: auto;
+  max-height: 390px;
+}
+
+.body::-webkit-scrollbar-track {
+  -webkit-box-shadow: inset 0 0 6px rgba(0, 0, 0, 0.3);
+  background-color: #fff;
+}
+
+.body::-webkit-scrollbar {
+  width: 6px;
+  background-color: #ff7e31;
+}
+
+.body::-webkit-scrollbar-thumb {
+  background-color: #ff7e31;
+}
+
+.dataRow {
+  border: 1px solid #f4f6fb;
+  height: 39px;
+  font-family: 'roboto';
+  font-size: 10px;
+  max-height: 400px;
+}
+
+.dataCell {
+  text-align: left;
+  padding-left: 5px;
+  font-size: 14px;
+}
+
+.headerCell {
+  text-align: left;
+  padding-left: 5px;
+  font-size: 14px;
+  font-weight: 700;
+}
+
+.dataCellAmount {
+  font-size: 14px;
+  text-align: center;
+}
+
+.headerCellAmount {
+  text-align: center;
+  font-size: 14px;
+  font-weight: 700;
+}
+
+@media (min-width: 768px) {
+  .table {
+    width: 625px;
+    height: fit-content;
+    align-self: center;
+  }
+  .tabletbale {
+    display: none;
+  }
+}
+@media (min-width: 1280px) {
+  .table {
+    width: 740px;
+    align-self: flex-start;
+    margin-top: 35px;
+  }
+  .tabletbale {
+    display: none;
+  }
+}

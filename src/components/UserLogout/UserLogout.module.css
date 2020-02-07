@@ -1,0 +1,32 @@
+.logout_btn {
+  display: flex;
+  background: transparent;
+  border: none;
+}
+
+.logoutSvg {
+  display: flex;
+  fill: #b5b5b6;
+  width: 20px;
+  height: 20px;
+}
+
+.logoutSvg:hover {
+  cursor: pointer;
+}
+.logoutP {
+  display: none;
+}
+
+@media (min-width: 768px) {
+  .logoutSvg {
+    display: none;
+  }
+  .logoutP {
+    display: flex;
+  }
+  .logoutP:hover {
+    text-decoration: underline;
+    cursor: pointer;
+  }
+}

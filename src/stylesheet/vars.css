@@ -1,0 +1,13 @@
+:root {
+  --orange: #fb7c2e;
+  --gray: #f4f6fb;
+  --white: #f4f6fb;
+  --text-dark: #52555f;
+  --icon-dark: #091e3f;
+  --popup-gradient: linear-gradient(
+    -75deg,
+    rgb(27, 59, 109) 0%,
+    rgb(9, 30, 63) 100%
+  );
+  --button-hover: #0c2346;
+}

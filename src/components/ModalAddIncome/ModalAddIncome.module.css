@@ -1,0 +1,239 @@
+.tav_div {
+  font-weight: 5px;
+  position: relative;
+  display: block;
+  padding-left: 35px;
+  margin-top: 17px;
+}
+
+.tab_input_selector {
+  width: 100px;
+  outline: none;
+}
+
+.react_select {
+  width: 300px;
+  padding: 0 20px;
+  outline: none;
+}
+
+.tab_input_container {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+.tab_select_input_section {
+  width: 100%;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  margin-bottom: 35px;
+}
+
+.input_button_section {
+  display: flex;
+  flex-flow: row;
+  margin-bottom: 30px;
+}
+
+.modalContent {
+  display: flex;
+  flex-flow: row;
+  align-items: baseline;
+}
+
+.modalDeleteCosts_btn {
+  display: flex;
+  justify-content: space-between;
+  width: 260px;
+}
+
+.modalWrapper {
+  width: 310px;
+  height: 195px;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  background-color: #fff;
+  border-radius: 25px;
+}
+
+.tab_input_price {
+  background-color: #ffffff;
+  border: 3px solid #f4f6fb;
+  border-radius: 40px 0px 0px 40px;
+  padding-bottom: 10px;
+  padding-top: 10px;
+  width: 109px;
+  padding-top: 20px;
+  padding-bottom: 10px;
+  height: 45px;
+  position: relative;
+  padding-left: 58px;
+  outline: none;
+}
+
+.modalDeleteCosts_p {
+  font-weight: 700;
+  padding-bottom: 20px;
+}
+
+.test {
+  position: relative;
+}
+
+.yes_no_btn_delete_costs:hover {
+  background-color: tomato;
+  color: white;
+  border: none;
+  cursor: pointer;
+}
+
+.yes_no_btn_delete_costs {
+  display: flex;
+  flex-flow: row;
+  width: 125px;
+  height: 47px;
+  justify-content: center;
+  text-transform: uppercase;
+  border-radius: 15px;
+  font-weight: 700;
+  background-color: transparent;
+  border: 1px solid grey;
+}
+
+.tab_input_price::placeholder {
+  color: #313132;
+  font-size: 15px;
+  padding-right: 100px;
+  font-weight: 600;
+  outline: none;
+  width: 30px;
+}
+
+input:focus ~ label {
+  visibility: hidden;
+  font-size: 15px;
+}
+
+label:focus {
+  visibility: hidden;
+  font-size: 15px;
+}
+
+.tab_input_price_button {
+  background-color: #ffffff;
+  border: 3px solid #f4f6fb;
+  border-radius: 0px 40px 40px 0px;
+  padding-bottom: 10px;
+  padding-top: 10px;
+  padding-right: 7px;
+  width: 66px;
+  height: 45px;
+  outline: none;
+}
+
+.forms {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-around;
+  width: 100%;
+  margin-bottom: 10px;
+}
+
+.yes_no_btn_delete_costs {
+  padding-right: 21px;
+  padding-left: 25px;
+  padding-top: 15px;
+  padding-bottom: 14px;
+  background-color: #f4f6fb;
+  color: #52555f;
+  border-radius: 17px;
+  border: none;
+  font-size: 11px;
+  -webkit-box-shadow: 9px 15px 50px -18px #000000;
+  box-shadow: 9px 15px 50px -18px #000000;
+  outline: none;
+}
+
+@media (min-width: 768px) {
+  .tab_input_container {
+    width: 100%;
+    background-color: #ffffff;
+    padding: 0px;
+  }
+
+  .modalWrapper {
+    width: 380px;
+  }
+
+  .tav_div {
+    font-weight: 5px;
+    position: relative;
+    display: block;
+    margin-right: 30px;
+    padding: 0px;
+    margin-top: 17px;
+  }
+
+  /* .tav_div::after {
+    content: url('../../assets/images/calendar.png');
+    margin: 0;
+    display: block;
+    position: absolute;
+    top: 0px;
+    left: 0px;
+  } */
+
+  .tab_select_input_section {
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    width: 100%;
+    align-items: unset;
+    background-color: #ffffff;
+    margin-bottom: 9px;
+  }
+
+  .tab_input_price {
+    border-right: 0;
+    background-color: #ffffff;
+    border: 3px solid #f4f6fb;
+    border-radius: 40px 0px 0px 40px;
+    padding: 0;
+    width: 65px;
+    text-align: -webkit-right;
+  }
+
+  .tab_input_price::placeholder {
+    padding: 0;
+  }
+
+  .tab_input_price_button {
+    border-left: 0;
+    background-color: #ffffff;
+    border: 3px solid #f4f6fb;
+  }
+
+  .forms {
+    justify-content: space-evenly;
+    width: 60%;
+  }
+}
+
+@media (min-width: 1280px) {
+  .tab_input_container {
+    width: 100%;
+    flex-direction: row;
+    align-items: baseline;
+    padding: 0px;
+  }
+
+  .forms {
+    width: 43%;
+    margin-top: 20px;
+    justify-content: flex-end;
+  }
+}

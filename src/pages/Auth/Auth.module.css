@@ -1,0 +1,34 @@
+.wrap {
+  height: calc(100vh - 60px);
+}
+
+.wrapper {
+  display: flex;
+  flex-flow: column;
+  height: 289px;
+  border-radius: 0 0 0 120px;
+  background-color: #f4f6fb;
+}
+
+@media screen and (min-width: 768px) {
+  .wrapper {
+    height: 512px;
+  }
+}
+
+@media screen and (min-width: 1280px) {
+  .wrapper {
+    flex-flow: row;
+    position: relative;
+  }
+  .wrapper::before {
+    position: absolute;
+    content: '';
+    left: 0;
+    top: 25px;
+    width: 100%;
+    height: 314px;
+    background-image: url('../../assets/images/auth_bg1280.png');
+    background-repeat: repeat-x;
+  }
+}

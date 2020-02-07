@@ -1,0 +1,87 @@
+.menuCategotyList {
+  display: flex;
+  align-self: center;
+  flex-flow: row wrap;
+  flex-wrap: wrap;
+  justify-content: center;
+  align-items: center;
+  width: 67%;
+}
+
+.menuCategoryItem {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  width: 100px;
+  height: 140px;
+}
+
+.itemAmount {
+  font-size: 11px;
+  line-height: 45px;
+  font-weight: 400;
+  text-align: center;
+  color: #52555f;
+}
+
+.itemIconBtn,
+.itemIsActiveBtn {
+  width: 58px;
+  height: 47px;
+  border-radius: 17px;
+  cursor: pointer;
+  background-color: rgb(244, 246, 251);
+}
+
+.itemIsActiveBtn {
+  composes: itemIconBtn;
+  background-color: rgb(255, 217, 192);
+}
+
+.icon {
+  width: 50px;
+  height: 50px;
+  pointer-events: none;
+}
+
+.itemTitle {
+  font-size: 10px;
+  line-height: 45px;
+  font-weight: 700;
+  text-align: center;
+  text-transform: uppercase;
+  color: #52555f;
+}
+
+.buttonAll,
+.buttonAllIsActive {
+  font-size: 14px;
+  color: #52555f;
+  font-weight: 700;
+  text-transform: uppercase;
+  height: 50px;
+  border: none;
+  border-radius: 20px;
+  background-color: rgb(244, 246, 251);
+}
+
+.buttonAllOrange {
+  composes: buttonAll;
+  background-color: rgb(255, 217, 192);
+}
+
+@media (max-width: 1279px) {
+  .menuCategotyList {
+    width: 100%;
+  }
+}
+
+@media (max-width: 767px) {
+  .menuCategotyList {
+    width: 100%;
+    padding: 0;
+    height: auto;
+    border-radius: 0;
+  }
+}

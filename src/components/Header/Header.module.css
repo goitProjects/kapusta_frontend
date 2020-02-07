@@ -1,0 +1,48 @@
+.header {
+  display: flex;
+  justify-content: space-between;
+  background-color: #ffffff;
+  height: 58px;
+  width: 100wh;
+  padding: 0 20px;
+  margin: 0;
+}
+
+.Logo_IMG,
+.Logo_link {
+  height: 33px;
+  align-self: center;
+  cursor: pointer;
+}
+
+.user_logout_div {
+  display: flex;
+  justify-content: space-between;
+  width: 70px;
+  flex-flow: row;
+  align-self: center;
+}
+
+@media (min-width: 768px) {
+  .user_logout_div {
+    width: fit-content;
+    padding: 0 5px;
+    justify-content: space-between;
+  }
+
+  .Logo_IMG {
+    transition: 0.3s ease-in;
+  }
+
+  .Logo_IMG:hover {
+    transform: scale(1.03, 1.03);
+    transition: transform 0.3s ease-in;
+  }
+}
+
+@media (min-width: 1280px) {
+  .header {
+    max-width: 1280px;
+    margin: 0 auto;
+  }
+}

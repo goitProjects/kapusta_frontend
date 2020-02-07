@@ -1,0 +1,45 @@
+.activeLink {
+  color: red;
+}
+
+.tabList {
+  display: flex;
+  justify-content: space-around;
+  list-style: none;
+  background: none;
+}
+
+.tab {
+  cursor: pointer;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  position: relative;
+}
+
+@media (min-width: 768px) {
+  .tabList {
+    display: block;
+    padding: 0;
+  }
+
+  .tab {
+    display: inline-block;
+    position: relative;
+    list-style: none;
+    cursor: pointer;
+    box-shadow: none;
+
+    width: 18%;
+    height: 40px;
+    line-height: 40px;
+    background-color: #fbfbfe;
+    border-radius: 20px 20px 0 0;
+    color: #757577;
+  }
+
+  .activeLink {
+    background: #fefefe;
+    color: #ff8730;
+  }
+}

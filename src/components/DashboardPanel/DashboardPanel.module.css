@@ -1,0 +1,114 @@
+.PanelContainer {
+  width: 100%;
+  margin: 0 auto;
+  display: flex;
+  flex-direction: column;
+  background: #fff;
+  border-radius: 20px 20px 0 0;
+  box-shadow: 0 1px 3px rgba(0, 0, 0, 0.12), 0 1px 2px rgba(0, 0, 0, 0.24);
+  margin-bottom: 30px;
+}
+
+.buttonForModal {
+  display: flex;
+  flex-direction: row;
+  width: 300px;
+  justify-content: space-between;
+  margin-bottom: 20px;
+}
+
+.TransactionsList {
+  margin: 0 auto;
+}
+
+.PanelContainer1 {
+  margin: 0 auto;
+  display: flex;
+  flex-direction: column;
+}
+
+.buttonModal {
+  padding-right: 24px;
+  padding-left: 24px;
+  padding-top: 15px;
+  padding-bottom: 14px;
+  width: 108px;
+  text-align: center;
+  background-color: #ff7e31;
+  color: #f4f6fb;
+  border-radius: 17px;
+  border: #ff7e31;
+  font-size: 11px;
+  box-shadow: 9px 15px 50px -18px #000000;
+  outline: none;
+}
+
+.buttonModal_back {
+  padding-right: 24px;
+  padding-left: 24px;
+  padding-top: 15px;
+  padding-bottom: 14px;
+  width: 108px;
+  text-align: center;
+  background-color: #ff7e31;
+  color: #f4f6fb;
+  border-radius: 17px;
+  border: #ff7e31;
+  font-size: 11px;
+  box-shadow: 9px 15px 50px -18px #000000;
+  outline: none;
+  margin-left: 67px;
+}
+
+.buttonModal:hover {
+  padding-right: 35px;
+  padding-left: 35px;
+  padding-top: 15px;
+  padding-bottom: 14px;
+  margin: 0 auto;
+  width: 240px;
+  background-color: #a14f1f;
+  color: #f4f6fb;
+  border-radius: 17px;
+  border: #ff7e31;
+  font-size: 11px;
+  -webkit-box-shadow: 9px 15px 50px -18px #000000;
+  box-shadow: 9px 15px 50px -18px #000000;
+  outline: none;
+}
+
+.TablesContainer {
+  width: 625px;
+  display: flex;
+  flex-direction: column;
+  margin: 0 auto;
+}
+
+.TransactionsTable {
+  flex: 1 1 75%;
+  margin-right: 2%;
+}
+
+.SummaryTable {
+  flex: 1 1 23%;
+}
+
+@media (min-width: 768px) {
+  .TablesContainer {
+    padding-bottom: 50px;
+    border-radius: 0 0 20px 20px;
+    width: 688px;
+    background-color: #fff;
+    box-shadow: 0 1px 3px rgba(0, 0, 0, 0.1), 0 1px 2px rgba(0, 0, 0, 0.1);
+  }
+}
+@media (min-width: 1280px) {
+  .TablesContainer {
+    justify-content: space-between;
+    flex-direction: row;
+    padding: 0 10px 0 10px;
+    padding-bottom: 50px;
+    width: 1025px;
+    background-color: #fff;
+  }
+}

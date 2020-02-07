@@ -1,0 +1,27 @@
+.contacts_div_main {
+  display: flex;
+  padding: 40px 0;
+  flex-flow: column;
+  justify-content: center;
+  align-self: center;
+}
+
+.arrowBtn {
+  display: flex;
+  max-width: 200px;
+  margin-bottom: 20px;
+  justify-content: flex-start;
+  border: none;
+  background: transparent;
+}
+.arrowSvg {
+  fill: var(--orange);
+  color: var(--orange);
+  width: 30px;
+  height: 20px;
+}
+.backText {
+  color: var(--text-dark);
+  font-size: 14px;
+  line-height: 20px;
+}

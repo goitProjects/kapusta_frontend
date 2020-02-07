@@ -1,0 +1,230 @@
+.wrap {
+  position: relative;
+  margin: 0;
+  padding: 0px;
+  height: 198px;
+  /* background-color: var(--grey); */
+  min-width: 278px;
+
+  display: flex;
+  flex-direction: column-reverse;
+  align-items: center;
+  justify-content: center;
+}
+
+.arrowBtn {
+  position: absolute;
+  display: flex;
+  justify-content: flex-start;
+  top: 18px;
+  left: 20px;
+  border: none;
+  background-color: var(--grey);
+  /* width: 20px;
+  height: 20px; */
+}
+
+.arrowSvg {
+  fill: var(--orange);
+  color: var(--orange);
+  width: 30px;
+  height: 20px;
+}
+
+.backText {
+  display: none;
+}
+
+.backTextTabl {
+  display: none;
+}
+
+.calendarWrap {
+  margin-top: 54px;
+  margin-bottom: 32px;
+}
+
+.calendarText {
+  margin-top: 2px;
+  display: none;
+}
+
+.switchWrap {
+  display: flex;
+}
+
+.cldrMonth {
+  width: 100px;
+  text-align: center;
+  text-transform: uppercase;
+  font-weight: 700;
+  font-size: 12px;
+  padding-top: 2px;
+}
+
+.calendarBtn {
+  display: block;
+  border: none;
+  background: none;
+  width: 20px;
+  color: orange;
+}
+
+.calendarBtnDisabled {
+  composes: calendarBtn;
+  color: grey;
+}
+
+.dateBalanceWrap {
+  margin-bottom: 30px;
+}
+
+.dateBalance {
+  margin-top: 2px;
+  margin-bottom: 14px;
+  color: var(--text-dark);
+  text-align: center;
+  font-size: 13px;
+  text-transform: uppercase;
+  font-weight: 700;
+}
+
+.dateBalanceSumBalance,
+.dateBalanceSum {
+  display: block;
+  padding: 14px 34px;
+  border: 2px solid #fff;
+  border-radius: 40px;
+}
+
+.dateBalanceSum {
+  display: none;
+}
+
+@media screen and (min-width: 768px) {
+  .wrap {
+    flex-direction: row;
+    justify-content: space-between;
+    align-items: center;
+    margin: 0 auto;
+    padding: 0;
+    width: 688px;
+    height: 104px;
+  }
+
+  .arrowBtn {
+    position: initial;
+    display: flex;
+    align-items: center;
+    justify-content: flex-start;
+    width: 180px;
+    height: 20px;
+  }
+
+  .backText {
+    display: none;
+  }
+
+  .backTextTabl {
+    display: inline-block;
+    font-size: 13px;
+    color: var(--text-dark);
+    margin-left: 16px;
+  }
+
+  .calendarWrap {
+    margin: 0;
+    width: 180px;
+  }
+
+  .dateBalanceWrap {
+    margin: 0;
+    /* margin-top: 4px; */
+  }
+
+  .dateBalance {
+    color: var(--text-dark);
+    font-weight: 400;
+    text-transform: initial;
+    /* width: 180px; */
+  }
+
+  .dateBalanceSumBalance {
+    display: none;
+  }
+
+  .dateBalanceSum {
+    display: inherit;
+    font-size: 15px;
+    font-weight: 700;
+    width: 180px;
+    padding: 13px 0px;
+    text-align: center;
+  }
+
+  .calendarWrap {
+    /* margin-top: 4px; */
+    /* height: 34px; */
+    display: flex;
+    flex-direction: column;
+    justify-content: right;
+    align-items: flex-end;
+    font-size: 13px;
+    color: var(--text-dark);
+  }
+
+  .calendarText {
+    margin-bottom: 10px;
+    display: inherit;
+  }
+}
+
+@media screen and (min-width: 1280px) {
+  .wrap {
+    width: 942px;
+    height: 112px;
+    margin: 0;
+    align-items: center;
+  }
+
+  .backText {
+    display: inline;
+    font-size: 13px;
+    color: var(--text-dark);
+    margin-left: 12px;
+  }
+
+  .backTextTabl {
+    display: none;
+  }
+
+  .dateBalanceWrap {
+    display: flex;
+    flex-direction: row;
+    width: 520px;
+    justify-content: center;
+    align-items: center;
+    height: 50px;
+    text-align: center;
+  }
+
+  .dateBalance {
+    width: 180px;
+    margin: 0px;
+    /* text-transform: uppercase; */
+    font-weight: 700;
+    margin-top: 2px;
+    text-align: right;
+    margin-right: 20px;
+  }
+
+  .dateBalanceSum {
+    display: inline-block;
+    width: 180px;
+    text-align: center;
+  }
+
+  .cldrMonth {
+    padding: 0px;
+  }
+}
